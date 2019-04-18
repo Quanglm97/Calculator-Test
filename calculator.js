@@ -11,7 +11,7 @@ class Calculator {
     calculate(operatorName, numberA, numberB) {
         const operator = this.operators[operatorName];
         if (!operator) {
-            throw new Error (`Operator [${operatorName}] is not supported!`);
+            throw new Error(`Operator [${operatorName}] is not supported!`);
         }
         return operator.run(numberA, numberB);
     }

@@ -1,7 +1,7 @@
-class Add {
+class Addition {
     run (numberA, numberB) {
         return numberA + numberB;
     }
 }
 
-module.exports = Add;
+module.exports = Addition;

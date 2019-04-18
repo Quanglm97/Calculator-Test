@@ -1,7 +1,7 @@
-class Mul {
+class Multiplication {
     run(numberA, numberB) {
         return numberA * numberB
     }
 }
 
-module.exports = Mul;
+module.exports = Multiplication;

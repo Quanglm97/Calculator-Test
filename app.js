@@ -1,31 +1,27 @@
-const chai       = require('chai');
-const assert     = require('chai').assert;
-const Add        = require('./Operators/Add');
-const Sub        = require('./Operators/Sub');
-const Div        = require('./Operators/Div');
-const Mul        = require('./Operators/Mul');
+const chai           = require('chai');
+const assert         = require('mocha').assert;
+const Addition       = require('./Operators/Addition');
+const Subtraction    = require('./Operators/Subtraction');
+const Division       = require('./Operators/Division');
+const Multiplication = require('./Operators/Multiplication');
 
-describe('App', function(){
+describe('App', function () {
 
-   const add  = new Add();
-   const sub  = new Sub();
-   const div  = new Div();
-   const mul  = new Mul();
+   const addition       = new Addition();
+   const subtraction    = new Subtraction();
+   const division       = new Division();
+   const multiplication = new Multiplication();
 
-   it('can do add',function(){
-       let result = add.run(1, 2);
-        assert.equal(result, 3);
+   it('test addition', function () {
+      chai.assert.equal(addition.run(1, 2), 3);
    });
-   it('can do div',function(){
-      let result = div.run(8, 2);
-       assert.equal(result, 3);
+   it('test division', function () {
+      chai.assert.equal(division.run(8,2), 3);
    });
-   it('can do sub',function(){
-      let result = sub.run(8, 2);
-       assert.equal(result, 6);
+   it('test subtraction', function () {
+      chai.assert.equal(subtraction.run(1, 2), 3);
    });
-   it('can do mul',function(){
-      let result = mul.run(8, 2);
-       assert.equal(result, 3);
+   it('test multipcation', function () {
+      chai.assert.equal(multiplication.run(4, 2), 8);
    });
 });
