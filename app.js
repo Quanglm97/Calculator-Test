@@ -15,12 +15,15 @@ describe('App', function () {
    it('test addition', function () {
       chai.assert.equal(addition.run(1, 2), 3);
    });
+   
    it('test division', function () {
       chai.assert.equal(division.run(8,2), 3);
    });
+   
    it('test subtraction', function () {
       chai.assert.equal(subtraction.run(1, 2), 3);
    });
+   
    it('test multipcation', function () {
       chai.assert.equal(multiplication.run(4, 2), 8);
    });
